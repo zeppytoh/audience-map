@@ -2,18 +2,102 @@
 import Header from "../../components/Header.astro";
 import MainLayout from "../../layouts/MainLayout.astro";
 
-// This would be replaced with actual content once you provide it
 const stageContent = {
   id: "open",
   name: "Open",
   japaneseName: "オープン",
-  description: "オープンステージについての詳細な説明がここに入ります。",
-  characteristics: [
-    "特徴1についての説明",
-    "特徴2についての説明",
-    "特徴3についての説明",
+  description:
+    "非クリスチャンがキリスト教についてより認識するようになると、通常は受動的にデフォルトで移行する状態。「オープン」段階の人々は、通常、生来の好奇心があるか、オープンマインドでありたいという願望から開放的になっています。機能的には、「オープン」段階の人々は、霊的な関わり方において「無関心」段階の人々にまだかなり近いと言えます。",
+  quote: "「オープンマインドであることは、私という人間の一部です。」",
+  variants: ["オープン-中立", "オープン-躊躇", "オープン-好奇心"],
+  goals: [
+    "幸せになり、経済的に繁栄したい",
+    "楽しい活動や新しい経験を好む",
+    "読書と実験が最も好まれる学習スタイルの一つ",
+    "キリスト教徒から実質的なものを求めていない（「オープン-学びたい」を除く）",
+    "キリスト教は彼らにとって重要とは見なされていない",
   ],
-  examples: ["例1についての説明", "例2についての説明"],
+  characteristics: [
+    {
+      title: "情報は会話よりも重要",
+      description:
+        "「オープン-中立」と「オープン-躊躇」の人々は、キリスト教について話す人よりも、キリスト教に関する情報・リソースに触れる可能性が高いです。",
+    },
+    {
+      title: "オープンと無関心の違い",
+      description:
+        "機能的には、これら2つの段階は似ているように見えますが、いくつかの重要な違いがあります。「オープン」段階の人々は一般的にキリスト教に対してより中立的な経験をしているのに対し、「無関心」段階の人々はより否定的な経験をしていることが多いです。",
+    },
+    {
+      title: "幸せな生活",
+      description:
+        "「オープン」段階の人々は一般的に、幸せで成功した生活と認識するものに焦点を当てています。これには、経済的な繁栄、個人的成長と自己啓発、新しい活動の試み、新しく興味深い経験の獲得が含まれます。",
+    },
+    {
+      title: "デフォルトと選択",
+      description:
+        "「オープン-中立」の人々は一般的にデフォルトでその状態になっているのに対し、「オープン-躊躇」の人々はより選択によってその状態になっています。これは、キリスト教やキリスト教徒との何らかの接触後の段階への移行です。",
+    },
+    {
+      title: "自分を超えた現実への開放性",
+      description:
+        "「オープン」と「無関心」のもう一つの重要な違いは、「オープン」段階の人々は一般的に自分を超えた現実について考え、学ぶことにより開放的であることです。また、キリスト教徒が興味を持つトピックにやや関心を持ち、信念に関係なく、良い扱いを受ければコミュニティに留まる可能性が高いかもしれません。",
+    },
+    {
+      title: "心からの学習者",
+      description:
+        "「オープン」段階の人々は一般的に学習と自己発見を重視しています。読書、実験、観察、専門家との交流による学習が彼らの好む方法です。しかし、学習や新しいことを試す際には、専門家になる必要のない方法で行いたいと考えています。「オープン-好奇心」の人々は、情報源だけでなく、他の人から学ぶことにより積極的です。",
+    },
+    {
+      title: "オープンマインドは価値観",
+      description:
+        "「オープン」段階の人々は、信念体系に関してオープンマインドと包括性を重視しています。彼らはキリスト教だけでなく、多様な経験や視点に開かれています。このため、他の段階の人々よりも、自分とは異なる人々とのコミュニティの一部になる可能性が高いです。",
+    },
+    {
+      title: "トラウマへの対処",
+      description:
+        "「オープン」段階の人々は一般的に、周囲の世界で起きていることを認識し、それに悩まされています。彼らはそれに負担を感じています。「オープン-躊躇」の人々にとって、トラウマやメンタルヘルスの問題への対処は、キリスト教についてもっと学びたいという意欲の大きな障壁となっています。「オープン-好奇心」の人々は、世界で起きている困難の中で、自分の人生の目的を理解する必要性をより強く感じています。",
+    },
+    {
+      title: "キリスト教の認識",
+      description:
+        "「オープン」段階の人々は一般的に、キリスト教が自分自身や世界に対して何らかの重要性を持っているとは認識していません。友人が望むならキリスト教について議論する意欲があるかもしれませんが、そうする必要性を感じておらず、キリスト教徒から実質的なものを期待していません。",
+    },
+  ],
+  movement: {
+    factors: [
+      {
+        title: "探求していない",
+        description:
+          "一般的に、「オープン」段階の人々は、キリスト教徒とキリスト教について話し合ったり、キリスト教組織に参加したり、知っているキリスト教徒と宗教を探求したりすることを求めていません。特に信念について議論することを望んでいません。それを強制すると、「無関心」や「敵対的」な方向へ移行する可能性があります。",
+      },
+      {
+        title: "信頼関係の構築",
+        description:
+          "キリスト教徒の友人をより良く知り、信頼できるようになれば、「オープン-好奇心」や「探求中」へ移行する可能性があります。",
+      },
+      {
+        title: "偽善を見る",
+        description:
+          "キリスト教徒の生活様式や信念が偽善的であると見たり感じたりすると、オープンさが減少する可能性があります。",
+      },
+      {
+        title: "学ぶ自由",
+        description:
+          "キリスト教徒と交流する必要なく、自分の条件でキリスト教について学ぶ機会が与えられれば、「オープン-好奇心」や「探求中」へ移行する可能性があります。特に、この学びを通じて、キリスト教が生活や社会をより良くするためにどのように変化をもたらしたかを見ることができれば。",
+      },
+      {
+        title: "所属への圧力",
+        description:
+          "この段階の人々は多様な経験や信念に対してオープンであり続けたいと思っており、そのため、この点で制限や束縛を課すグループに所属したくありません。キリスト教コミュニティの一部になるよう圧力をかけると、オープンであることから遠ざかる可能性が高いです。",
+      },
+      {
+        title: "肯定的な影響",
+        description:
+          "「オープン-好奇心」段階の人々は一般的に、キリスト教に触れることにより開放的です。彼らは一般的に、世界に肯定的な変化をもたらすことができる人々を尊重しています。肯定的な変化をもたらす人々と交流し、キリスト教が世界にどのような影響を与えたかについて聞くことができれば、「探求中」へ移行する可能性があります。",
+      },
+    ],
+  },
 };
 ---
 
@@ -38,7 +122,7 @@ const stageContent = {
   </div>
 
   <div class="bg-white rounded-lg shadow-md p-8">
-    <div class="mb-6">
+    <div class="mb-6 border-l-4 border-open pl-4">
       <h2 class="text-3xl font-bold text-gray-800">
         {stageContent.japaneseName}
       </h2>
@@ -46,17 +130,50 @@ const stageContent = {
     </div>
 
     <div class="prose max-w-none">
-      <p>{stageContent.description}</p>
+      <p class="text-lg">{stageContent.description}</p>
 
-      <h3 class="text-xl font-semibold mt-6 mb-3">特徴</h3>
-      <ul class="list-disc pl-5 space-y-2">
-        {stageContent.characteristics.map((item) => <li>{item}</li>)}
+      <blockquote class="italic border-l-4 border-gray-300 pl-4 my-6">
+        {stageContent.quote}
+      </blockquote>
+
+      <div class="bg-gray-50 p-4 rounded-lg my-6">
+        <p class="font-medium">「オープン」段階の3つのバリエーション：</p>
+        <ul class="list-disc pl-5 mt-2">
+          {stageContent.variants.map((variant) => <li>{variant}</li>)}
+        </ul>
+      </div>
+
+      <h3 class="text-2xl font-semibold mt-8 mb-4">概要</h3>
+      <p>「オープン」の3つのバリエーション間の共通点：</p>
+      <ul class="list-disc pl-5 space-y-1 mt-2">
+        {stageContent.goals.map((goal) => <li>{goal}</li>)}
       </ul>
 
-      <h3 class="text-xl font-semibold mt-6 mb-3">例</h3>
-      <ul class="list-disc pl-5 space-y-2">
-        {stageContent.examples.map((item) => <li>{item}</li>)}
-      </ul>
+      <h3 class="text-2xl font-semibold mt-8 mb-4">洞察と特性</h3>
+      <div class="space-y-6">
+        {
+          stageContent.characteristics.map((char) => (
+            <div>
+              <h4 class="text-xl font-medium text-gray-800">{char.title}</h4>
+              <p>{char.description}</p>
+            </div>
+          ))
+        }
+      </div>
+
+      <h3 class="text-2xl font-semibold mt-8 mb-4">
+        人々がどこへ、なぜ移行するか
+      </h3>
+      <div class="space-y-6">
+        {
+          stageContent.movement.factors.map((factor) => (
+            <div>
+              <h4 class="text-xl font-medium text-gray-800">{factor.title}</h4>
+              <p>{factor.description}</p>
+            </div>
+          ))
+        }
+      </div>
     </div>
   </div>
 </MainLayout>

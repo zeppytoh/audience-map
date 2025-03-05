@@ -40,7 +40,7 @@ const stages = [
     japaneseName: "無関心",
     color: "uninterested",
   },
-  { id: "dual", name: "Dual", japaneseName: "二重性", color: "dual" },
+  { id: "dual", name: "Dual", japaneseName: "二重", color: "dual" },
   { id: "unclear", name: "Unclear", japaneseName: "不明確", color: "unclear" },
 ];
 ---
@@ -49,12 +49,14 @@ const stages = [
   <Header />
 
   <div class="mb-8">
-    <div class="bg-white p-6 rounded-lg shadow-md">
-      <h2 class="text-2xl font-bold mb-4">伝えたい相手のマップへようこそ：</h2>
+    <div class="bg-white p-0 rounded-lg shadow-md">
+      <h2 class="text-2xl font-bold mb-4">
+        オーディエンス・マップへようこそ：
+      </h2>
       <p class="text-gray-700 mb-4">
-        この図では、12の異なるステージについて詳しく説明しています。各ステージをクリックして詳細をご覧ください。
+        この図では、12の異なるステージについて詳しく説明しています。
       </p>
-      <div class="overflow-hidden rounded-lg border border-gray-200">
+      <div class="overflow-hidden">
         <!-- <img
           src="/images/map.png"
           alt="12ステージマップ"
@@ -13255,7 +13257,7 @@ const stages = [
                 class="cls-1 land-unclear-label"
                 transform="translate(568.66 289.87)"
                 id="text13357"
-                ><tspan x="0" y="0" id="tspan13351">Unclear</tspan></text
+                ><tspan x="0" y="0" id="tspan13351">不明確</tspan></text
               >
               <text
                 class="cls-1 land-hostile-label"
@@ -13273,55 +13275,55 @@ const stages = [
                 class="cls-1 land-open-label"
                 transform="translate(380.53 218.46)"
                 id="text6809"
-                ><tspan x="0" y="0" id="tspan6807">Open</tspan></text
+                ><tspan x="0" y="0" id="tspan6807">オーペン</tspan></text
               >
               <text
                 class="cls-1 land-seeking-label"
                 transform="translate(612.78 176.83)"
                 id="text6813"
-                ><tspan x="0" y="0" id="tspan6811">Seeking</tspan></text
+                ><tspan x="0" y="0" id="tspan6811">探求中</tspan></text
               >
               <text
                 class="cls-1 land-dual-label"
                 transform="translate(555.51 342.22)"
                 id="text6817"
-                ><tspan x="0" y="0" id="tspan6815">Dual</tspan></text
+                ><tspan x="0" y="0" id="tspan6815">二重的</tspan></text
               >
               <text
                 class="cls-1 land-professing-label"
                 transform="translate(596.85 499.38)"
                 id="text6829"
-                ><tspan x="0" y="0" id="tspan6819">Professing</tspan></text
+                ><tspan x="0" y="0" id="tspan6819">告白する</tspan></text
               >
               <text
                 class="cls-1 land-grounded-label"
                 transform="translate(957.64 342.22)"
                 id="text6837"
-                ><tspan x="0" y="0" id="tspan6831">Grounded</tspan></text
+                ><tspan x="0" y="0" id="tspan6831">根付いた</tspan></text
               >
               <text
                 class="cls-1 land-growing-label"
                 transform="translate(758.76 197.42)"
                 id="text6847"
-                ><tspan x="0" y="0" id="tspan6839">Growing</tspan></text
+                ><tspan x="0" y="0" id="tspan6839">成長する</tspan></text
               >
               <text
                 class="cls-1 land-engaged-label"
                 transform="translate(825.74 385.24)"
                 id="text6859"
-                ><tspan x="0" y="0" id="tspan6849">Engaged</tspan></text
+                ><tspan x="0" y="0" id="tspan6849">関わり合う</tspan></text
               >
               <text
                 class="cls-1 land-unaware-label"
                 transform="translate(390.89 581.89)"
                 id="text6871"
-                ><tspan x="0" y="0" id="tspan6861">Unaware</tspan></text
+                ><tspan x="0" y="0" id="tspan6861">無自覚</tspan></text
               >
               <text
                 class="cls-2 land-multiplying-label"
                 transform="translate(752.88 356.39)"
                 id="text7715"
-                ><tspan x="0" y="0" id="tspan7713">Multiplying</tspan></text
+                ><tspan x="0" y="0" id="tspan7713">倍加する</tspan></text
               >
             </g>
           </g>
@@ -13329,8 +13331,7 @@ const stages = [
             class="helper"
             y="20"
             x="14.1171875"
-            transform="translate(244.94 397.78)">View stage →</text
-          ><text
+            transform="translate(244.94 397.78)"></text><text
             class="helper"
             y="-20"
             x="46.5546875"

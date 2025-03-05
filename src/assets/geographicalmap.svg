@@ -24,7 +24,8 @@
 
       .cls-1,
       .cls-2 {
-        font-family: SourceSansPro-Bold, "Source Sans Pro";
+        font-family: 'Inter', sans-serif;
+        font-weight: 800
       }
 
       .cls-3 {
@@ -8048,7 +8049,7 @@
       </g>
       <path class="cls-4" d="M712.55,253.16s6.86,13.11,2.48,21.61c-4.38,8.51,1.28,15.1,1.28,15.1" id="path13349"></path>
       <text class="cls-1 land-unclear-label" transform="translate(568.66 289.87)" id="text13357">
-        <tspan x="0" y="0" id="tspan13351">Unclear</tspan>
+        <tspan x="0" y="0" id="tspan13351">不明</tspan>
       </text> <text class="cls-1 land-hostile-label" transform="translate(186.24 579.6)" id="text6787">
         <tspan x="0" y="0" id="tspan6779">敵対的</tspan>
       </text> <text class="cls-1 land-uninterested-label" transform="translate(244.94 397.78)" id="text6805">

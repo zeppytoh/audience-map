@@ -1,5 +1,8 @@
-@import "tailwindcss";
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
+@import "tailwindcss";
 :root {
   --open_color_geographic: #fdb137;
   --growing_color_geographic: #60d3aa;
@@ -23,6 +26,9 @@
   --grounded_color_metro: #2f377f;
   --seeking_color_metro: #4b5fc2;
   --unaware_color_metro: #593649;
+  --alt-font: 'Space Grotesk', sans-serif;
+  --primary-font: 'Inter', sans-serif;
+
   }
 
 .geographic-map svg {

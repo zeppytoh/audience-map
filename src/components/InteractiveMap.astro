@@ -1,0 +1,102 @@
+---
+// src/components/InteractiveMap.astro
+---
+
+<style>
+  .map-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .region {
+    fill: #c8e6c9;
+    stroke: #388e3c;
+    stroke-width: 1.5;
+    transition: fill 0.3s ease;
+    cursor: pointer;
+  }
+
+  .region:hover {
+    fill: #81c784;
+  }
+
+  .region-north:hover {
+    fill: #4caf50;
+  }
+
+  .region-east:hover {
+    fill: #2196f3;
+  }
+
+  .region-south:hover {
+    fill: #ff9800;
+  }
+
+  .region-west:hover {
+    fill: #9c27b0;
+  }
+</style>
+
+<div class="map-container">
+  <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- North Region -->
+    <a href="/north-region" class="region-link">
+      <path
+        d="M200,100 L600,100 L500,250 L300,250 Z"
+        class="region region-north"
+        data-region="north"></path>
+    </a>
+
+    <!-- East Region -->
+    <a href="/east-region" class="region-link">
+      <path
+        d="M500,250 L600,100 L700,400 L500,400 Z"
+        class="region region-east"
+        data-region="east"></path>
+    </a>
+
+    <!-- South Region -->
+    <a href="/south-region" class="region-link">
+      <path
+        d="M300,250 L500,250 L500,400 L300,500 Z"
+        class="region region-south"
+        data-region="south"></path>
+    </a>
+
+    <!-- West Region -->
+    <a href="/west-region" class="region-link">
+      <path
+        d="M100,400 L300,250 L300,500 L200,500 Z"
+        class="region region-west"
+        data-region="west"></path>
+    </a>
+
+    <!-- Labels for each region -->
+    <text x="400" y="175" text-anchor="middle" font-size="24">North Region</text
+    >
+    <text x="550" y="300" text-anchor="middle" font-size="24">East Region</text>
+    <text x="400" y="375" text-anchor="middle" font-size="24">South Region</text
+    >
+    <text x="225" y="375" text-anchor="middle" font-size="24">West Region</text>
+  </svg>
+</div>
+
+<script>
+  // Optional: Add JavaScript for additional interactivity
+  document.addEventListener("DOMContentLoaded", () => {
+    const regions = document.querySelectorAll(".region");
+
+    regions.forEach((region) => {
+      region.addEventListener("click", (e) => {
+        // If you want to add custom click behavior beyond the href navigation
+        const regionName = region.getAttribute("data-region");
+        console.log(`Clicked on ${regionName} region`);
+
+        // If you want to prevent default behavior and handle navigation programmatically
+        // e.preventDefault();
+        // window.location.href = `/${regionName}-region`;
+      });
+    });
+  });
+</script>

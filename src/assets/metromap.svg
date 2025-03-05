@@ -1,0 +1,99 @@
+<svg width="944" height="680" viewBox="0 0 944 680" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    #square-open {
+      fill: var(--open_color_metro) !important;
+    }
+
+    #square-growing {
+      fill: var(--growing_color_metro) !important;
+    }
+
+    #square-unaware {
+      fill: var(--unaware_color_metro) !important;
+    }
+
+    #square-unclear {
+      fill: var(--unclear_color_metro) !important;
+    }
+
+    #square-dual {
+      fill: var(--dual_color_metro) !important;
+    }
+
+    #square-uninterested {
+      fill: var(--uninterested_color_metro) !important;
+    }
+
+    #square-hostile {
+      fill: var(--hostile_color_metro) !important;
+    }
+
+    #square-professing {
+      fill: var(--professing_color_metro) !important;
+    }
+
+    #square-multiplying {
+      fill: var(--multiplying_color_metro) !important;
+    }
+
+    #square-engaged {
+      fill: var(--engaged_color_metro) !important;
+    }
+
+    #square-grounded {
+      fill: var(--grounded_color_metro) !important;
+    }
+
+    #square-seeking {
+      fill: var(--seeking_color_metro) !important;
+    }
+  </style>
+  <path d="M272.574 480.08V537.2" stroke="#999999" stroke-width="5.71199"></path>
+  <path d="M142.363 609.731L200.603 609.731" stroke="#999999" stroke-width="5.71199"></path>
+  <path d="M800.361 209.332L743.241 209.332" stroke="#999999" stroke-width="5.71199"></path>
+  <path d="M400.523 358.986L343.404 358.986" stroke="#999999" stroke-width="5.71199"></path>
+  <path d="M600.443 358.986L543.323 358.986" stroke="#999999" stroke-width="5.71199"></path>
+  <path d="M600.443 459.518L543.323 459.518" stroke="#999999" stroke-width="5.71199"></path>
+  <path d="M400.523 459.518L343.404 459.518" stroke="#999999" stroke-width="5.71199"></path>
+  <path d="M400.523 109.943L302.277 109.943C294.706 109.943 288.568 116.081 288.568 123.652L288.568 337.28"
+    stroke="#999999" stroke-width="5.71199"></path>
+  <path d="M672.414 280.161V337.281" stroke="#999999" stroke-width="5.71199"></path>
+  <path d="M472.494 180.772L472.494 237.892" stroke="#999999" stroke-width="5.71199"></path>
+  <path d="M872.334 280.161V337.281" stroke="#999999" stroke-width="5.71199"></path>
+  <path d="M872.334 480.08V537.2" stroke="#999999" stroke-width="5.71199"></path>
+  <path d="M600.443 409.252L343.404 409.252" stroke="#999999" stroke-width="5.71199"></path>
+  <path
+    d="M639.007 337.852V319.859C639.007 312.288 632.869 306.15 625.298 306.15H586.735C579.163 306.15 573.026 300.013 573.026 292.442V16.7088C573.026 9.13763 566.888 3 559.317 3H85.7418C80.381 3 76.0352 7.34581 76.0352 12.7066V38.2525"
+    stroke="#999999" stroke-width="5.71199" stroke-dasharray="5.71 5.71"></path>
+  <path d="M260.007 337.28L260.007 121.265C260.007 115.904 255.662 111.559 250.301 111.559L142.363 111.559"
+    stroke="#999999" stroke-width="5.71199" stroke-dasharray="5.71 5.71"></path>
+  <rect x="200.604" y="537.2" width="142.8" height="142.8" fill="#238F97" id="square-uninterested"></rect>
+  <rect x="200.604" y="337.281" width="142.8" height="142.8" fill="#FDBA13" id="square-open"></rect>
+  <rect x="600.443" y="337.281" width="142.8" height="142.8" fill="#D18BCE" id="square-professing"></rect>
+  <rect x="600.443" y="137.361" width="142.8" height="142.8" fill="#0FB701" id="square-growing"></rect>
+  <rect x="800.361" y="137.361" width="142.8" height="142.8" fill="#2D3474" id="square-grounded"></rect>
+  <rect x="800.361" y="337.281" width="142.8" height="142.8" fill="#297BF5" id="square-engaged"></rect>
+  <rect x="800.361" y="537.2" width="142.8" height="142.8" fill="#04FFF8" id="square-multiplying"></rect>
+  <rect x="0" y="536.865" width="142.8" height="142.8" fill="#E75516" id="square-hostile"></rect>
+  <rect x="0" y="37.8481" width="142.8" height="142.8" fill="#593649" id="square-unaware"></rect>
+  <rect x="400.523" y="37.9727" width="142.8" height="142.8" fill="#8D8FA8" id="square-dual"></rect>
+  <rect x="400.523" y="437.812" width="142.8" height="142.8" fill="#7437FF" id="square-seeking"></rect>
+  <rect x="400.523" y="237.892" width="142.8" height="142.8" fill="#E8418F" id="square-unclear"></rect>
+  <text class="helper" y="137.361" x="639.73114163208" fill="white" transform="translate(0 100)">View stage
+    →</text><text class="helper" y="137.361" x="671.843" transform="translate(0 55)"></text><text class=""
+    style="font-size:18px" y="608" x="271" fill="white" text-anchor="middle"
+    dominant-baseline="central">Uninterested</text><text class="" style="font-size:18px" y="408" x="271" fill="white"
+    text-anchor="middle" dominant-baseline="central">Open</text><text class="" style="font-size:18px" y="408" x="671"
+    fill="white" text-anchor="middle" dominant-baseline="central">Professing</text><text class="" style="font-size:18px"
+    y="208" x="671" fill="white" text-anchor="middle" dominant-baseline="central">Growing</text><text class=""
+    style="font-size:18px" y="208" x="871" fill="white" text-anchor="middle"
+    dominant-baseline="central">Grounded</text><text class="" style="font-size:18px" y="408" x="871" fill="white"
+    text-anchor="middle" dominant-baseline="central">Engaged</text><text class="" style="font-size:18px" y="608" x="871"
+    fill="white" text-anchor="middle" dominant-baseline="central">Multiplying</text><text class=""
+    style="font-size:18px" y="607" x="71" fill="white" text-anchor="middle"
+    dominant-baseline="central">Hostile</text><text class="" style="font-size:18px" y="108" x="71" fill="white"
+    text-anchor="middle" dominant-baseline="central">Unaware</text><text class="" style="font-size:18px" y="108" x="471"
+    fill="white" text-anchor="middle" dominant-baseline="central">Dual</text><text class="" style="font-size:18px"
+    y="508" x="471" fill="white" text-anchor="middle" dominant-baseline="central">Seeking</text><text class=""
+    style="font-size:18px" y="308" x="471" fill="white" text-anchor="middle" dominant-baseline="central">Unclear</text>
+</svg>

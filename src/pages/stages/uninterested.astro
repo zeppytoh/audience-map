@@ -1,0 +1,207 @@
+---
+import Header from "../../components/Header.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
+
+const stageContent = {
+  id: "uninterested",
+  name: "Uninterested",
+  japaneseName: "無関心",
+  description:
+    "キリスト教を文化的文脈で認識しているものの、さらに学ぶ意欲はない。一般的にキリスト教に対して敵対的ではなく、無関心である。「無関心」段階の人々はキリスト教徒の友人を持っているかもしれないが、友人の信仰実践を「良い人になるための方法」として捉えている。彼らはキリスト教を必要なものとは考えていない。無関心な人々は、イエスに対して無関心や回避的というよりも、キリスト教、教会、またはキリスト教徒に対してそのような態度を取ることが多い。",
+  quote: "「私はキリスト教について十分知っているし、これ以上知りたくない」",
+  goals: [
+    "幸せであること",
+    "経済的に成功すること",
+    "家族のために必要なものを提供すること",
+    "精神的健康を改善すること",
+    "良い人であること",
+  ],
+  characteristics: [
+    {
+      title: "宗教は無関係",
+      description:
+        "一般的に霊性/宗教に興味がなく、キリスト教もその一部として捉えている。",
+    },
+    {
+      title: "キリスト教徒に対する見方",
+      description:
+        "キリスト教徒に対して、肯定的でも否定的でもない中立的な見方をする傾向がある。組織化された宗教に懐疑的だが、イエスに対しては開かれている可能性がある。",
+    },
+    {
+      title: "霊的/宗教的な問い",
+      description:
+        "霊的または宗教的な問いについて考えることは非常に少ない/頻度が低い。",
+    },
+    {
+      title: "キリスト教は無関係",
+      description:
+        "キリスト教に対する好奇心がない。キリスト教（または宗教一般）には特別なものや魅力的なものは何もないと考えている。",
+    },
+    {
+      title: "キリスト教への馴染み",
+      description:
+        "友人/家族、テレビ番組/映画、メディアを通じてキリスト教にある程度馴染みがあるが、キリスト教についての情報が非常に少ないか、誤った情報を持っている可能性がある。",
+    },
+    {
+      title: "意識的な決断",
+      description: "キリスト教は自分には合わないと決めている。",
+    },
+  ],
+  movement: {
+    awayFromGod: [
+      {
+        title: "危険性",
+        description:
+          "意図的にこの段階に入った人、または意図的に教会から離れた人は、この段階から抜け出す可能性が低い。",
+      },
+      {
+        title: "敵対的への移行",
+        description:
+          "キリスト教徒との否定的な交流があった場合、またはキリスト教的世界観に対して否定的な考えを持つ場合、「敵対的」段階へ移行することがある。",
+      },
+    ],
+    towardGod: [
+      {
+        title: "信頼関係の構築",
+        description:
+          "キリスト教徒である気軽な友人を信頼できるようになると、「オープン」段階へ移行することがある。",
+      },
+      {
+        title: "探求の自由",
+        description:
+          "強制されるのではなく、自分の条件でキリスト教を探求する自由がある場合、「オープン」段階へ移行することがある。",
+      },
+    ],
+  },
+  engagement: {
+    prayer: [
+      "「無関心」の人々についての洞察を一時停止して振り返る。神に「無関心」の人々への共感と愛を深めてくださるよう求める。",
+      "神だけができる方法で、彼らの心に好奇心の火花を灯してくださるよう祈る。これが「オープン」段階へ一歩踏み出す始まりとなるよう祈る。",
+    ],
+    nextSteps: [
+      "「無関心」の人々は通常、意図的な選択によってその状態にある。どのようにして意図を持たずに彼らの旅を理解し、その過程で敬意と配慮を示すことができるだろうか？",
+      "「無関心」の人々は探求や好奇心を持っていない。この現実を念頭に置いて、この人にどのような提案ができるか、またはこの人の旅を助けるためにどのような提案を作る必要があるか？",
+      "彼らの目標に関連するトピックのイベントは、「釣り餌と切り替え」（見せかけだけの勧誘）をしなければ、彼らの関心を引くかもしれない。",
+      "オープンさへの動きが起こるためには、この人は本物のキリスト教徒を知るか、または圧力なしに自分でキリスト教を探求することを許されることが必要なようだ。どのようにしてこのニーズを満たすことができるか？",
+      "もし彼らがオープンさを示し始めたら、どのようにして彼らが独自に、自分のペースで疑問を探求する方法を提供できるか？",
+    ],
+    cautions: [
+      "「無関心」の人々が密かに「オープン」または「探求中」であると考えたくなる誘惑がある。彼らはそうではないので、彼らが探求していると仮定して宣教活動を作ることは効果的ではないだろう。",
+      "イエスについての情報と宣言だけでは「無関心」の人々を動かすことはできない。",
+      "「無関心」の人々に対して焦らないこと。もし彼らが周りにいたいなら、そうさせること。彼らが変化の兆候を示していなくても。",
+      "忍耐と敬意を持って「無関心」の人々と関わり続ける。キリスト教について防衛的になる誘惑に抵抗すること。彼らの生きた経験を認め、共感することができる。",
+    ],
+  },
+};
+---
+
+<MainLayout title={`${stageContent.japaneseName} | 12ステージマップ`}>
+  <Header />
+
+  <div class="mb-4">
+    <a href="/" class="text-blue-600 hover:text-blue-800 flex items-center">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5 mr-1"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+          clip-rule="evenodd"></path>
+      </svg>
+      マップに戻る
+    </a>
+  </div>
+
+  <div class="bg-gray-50 rounded-lg shadow-md p-8">
+    <div class="mb-6 border-l-4 border-uninterested pl-4">
+      <h2 class="text-3xl font-bold text-amber-800">
+        {stageContent.japaneseName}
+      </h2>
+      <p class="text-gray-600">{stageContent.name}</p>
+    </div>
+
+    <div class="prose max-w-none">
+      <p class="text-lg">{stageContent.description}</p>
+
+      <blockquote class="italic border-l-4 border-gray-300 pl-4 my-6">
+        {stageContent.quote}
+      </blockquote>
+
+      <h3 class="text-2xl font-semibold mt-8 mb-4">概要</h3>
+      <p>
+        「無関心」の人々は通常、ある程度キリスト教を認識しているが、さらに学ぶことに本当に興味がない。
+      </p>
+
+      <p class="font-semibold mt-4">むしろ、「無関心」の人々の目標は：</p>
+      <ul class="list-disc pl-5 space-y-1">
+        {stageContent.goals.map((goal) => <li>{goal}</li>)}
+      </ul>
+
+      <h3 class="text-2xl font-semibold mt-8 mb-4">特徴と洞察</h3>
+      <div class="space-y-6">
+        {
+          stageContent.characteristics.map((char) => (
+            <div>
+              <h4 class="text-xl font-medium text-gray-800">{char.title}</h4>
+              <p>{char.description}</p>
+            </div>
+          ))
+        }
+      </div>
+
+      <h3 class="text-2xl font-semibold mt-8 mb-4">
+        なぜこの段階の人々が別の段階へ移行するのか
+      </h3>
+
+      <h4 class="text-xl font-medium text-gray-800 mt-6">
+        神から遠ざかる動き:
+      </h4>
+      <div class="space-y-4 ml-4">
+        {
+          stageContent.movement.awayFromGod.map((item) => (
+            <div>
+              <h5 class="text-lg font-medium">{item.title}</h5>
+              <p>{item.description}</p>
+            </div>
+          ))
+        }
+      </div>
+
+      <h4 class="text-xl font-medium text-gray-800 mt-6">神に近づく動き:</h4>
+      <div class="space-y-4 ml-4">
+        {
+          stageContent.movement.towardGod.map((item) => (
+            <div>
+              <h5 class="text-lg font-medium">{item.title}</h5>
+              <p>{item.description}</p>
+            </div>
+          ))
+        }
+      </div>
+
+      <h3 class="text-2xl font-semibold mt-8 mb-4">
+        この段階の人々に忍耐と敬意をもって関わる方法
+      </h3>
+
+      <h4 class="text-xl font-medium text-gray-800 mt-6">彼らのために祈る:</h4>
+      <ul class="list-disc pl-5 space-y-2">
+        {stageContent.engagement.prayer.map((item) => <li>{item}</li>)}
+      </ul>
+
+      <h4 class="text-xl font-medium text-gray-800 mt-6">
+        次のステップを計画する:
+      </h4>
+      <ul class="list-disc pl-5 space-y-2">
+        {stageContent.engagement.nextSteps.map((item) => <li>{item}</li>)}
+      </ul>
+
+      <h4 class="text-xl font-medium text-gray-800 mt-6">注意点と励まし:</h4>
+      <ul class="list-disc pl-5 space-y-2">
+        {stageContent.engagement.cautions.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+  </div>
+</MainLayout>

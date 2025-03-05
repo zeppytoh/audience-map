@@ -1,0 +1,29 @@
+---
+const { title } = Astro.props;
+import "../styles/global.css";
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+      <header class="mb-8">
+        <h1 class="text-3xl font-bold text-center text-gray-800">
+          12ステージマップ
+        </h1>
+      </header>
+      <main>
+        <slot />
+      </main>
+      <footer class="mt-12 text-center text-gray-600 text-sm">
+        <p>&copy; 2025 Cru</p>
+      </footer>
+    </div>
+  </body>
+</html>

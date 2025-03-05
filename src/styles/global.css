@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+.geographic-map svg {
+  background-color: #98D8D6;
+}
+
+.cls-1 {
+  font-size: 16px;
+}
+.cls-1,
+.cls-2 {
+  font-family: inter, sans-serif;
+  font-weight: 400;
+}
+.cls-3 {
+  letter-spacing: -0.01em;
+}
+.cls-4 {
+  stroke: #fff;
+  stroke-dasharray: 0 0 3 3;
+}
+.cls-4,
+.cls-5 {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.cls-6 {
+  letter-spacing: -0.02em;
+}
+.cls-7 {
+  letter-spacing: -0.02em;
+}
+.cls-8 {
+  fill: #ebe6df;
+}
+.cls-9 {
+  fill: #ebe4d1;
+}
+.cls-10 {
+  fill: #e4ecdf;
+}
+.cls-11 {
+  fill: #8fabbf;
+}
+.cls-12 {
+  fill: #b7d2e5;
+}
+.cls-13 {
+  fill: #d2dbcc;
+}
+.cls-14 {
+  fill: #bcc7b5;
+}
+.cls-15 {
+  fill: #d7e0d1;
+}
+.cls-16 {
+  fill: #ccd6c5;
+}
+.cls-17 {
+  fill: #dde5d8;
+}
+.cls-18 {
+  fill: #d1cfc7;
+}
+.cls-19 {
+  fill: #dbdad5;
+}
+.cls-20 {
+  fill: #e0d8bf;
+}
+.cls-21 {
+  fill: #e0dac5;
+}
+.cls-22 {
+  fill: #e1e5df;
+}
+.cls-23 {
+  fill: #d5e0ce;
+}
+.cls-24 {
+  fill: #dee5da;
+}
+.cls-25 {
+  fill: #4c4a41;
+}
+.cls-26 {
+  letter-spacing: -0.02em;
+}
+.cls-27 {
+  letter-spacing: -0.02em;
+}
+.cls-28 {
+  letter-spacing: -0.02em;
+}
+.cls-2 {
+  font-size: 10.21px;
+}
+.cls-29 {
+  letter-spacing: 0em;
+}
+.cls-30 {
+  letter-spacing: -0.01em;
+}
+.cls-5 {
+  stroke: #4c4a41;
+  stroke-width: 0.5px;
+}
+.cls-31 {
+  letter-spacing: 0em;
+}
+.cls-32 {
+  letter-spacing: 0em;
+}
+.cls-33 {
+  letter-spacing: 0em;
+}
+.cls-34 {
+  letter-spacing: 0em;
+}

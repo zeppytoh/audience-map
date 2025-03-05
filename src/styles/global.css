@@ -1,5 +1,30 @@
 @import "tailwindcss";
 
+:root {
+  --open_color_geographic: #fdb137;
+  --growing_color_geographic: #60d3aa;
+  --unclear_color_geographic: #c2528b;
+  --dual_color_geographic: #bc1e51;
+  --uninterested_color_geographic: #73a2ac;
+  --hostile_color_geographic: #7c8da5;
+  --professing_color_geographic: #aed2f9;
+  --multiplying_color_geographic: #74e7da;
+  --engaged_color_geographic: #4f8eb5;
+  --grounded_color_geographic: #2f377f;
+  --open_color_metro: #fdb137;
+  --growing_color_metro: #60d3aa;
+  --unclear_color_metro: #c2528b;
+  --dual_color_metro: #bc1e51;
+  --uninterested_color_metro: #73a2ac;
+  --hostile_color_metro: #7c8da5;
+  --professing_color_metro: #aed2f9;
+  --multiplying_color_metro: #74e7da;
+  --engaged_color_metro: #4f8eb5;
+  --grounded_color_metro: #2f377f;
+  --seeking_color_metro: #4b5fc2;
+  --unaware_color_metro: #593649;
+  }
+
 .geographic-map svg {
   background-color: #98D8D6;
 }
